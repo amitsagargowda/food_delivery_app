@@ -78,7 +78,7 @@ app.get('/:id1/menu/:id2', async (req, res, next) => {
 
 app.post('/create', async (req, res, next) => {
   try {
-    await Menu.create({
+    await Restaurant.create({
       id: req.body.id,
       name: req.body.name,
       phoneno: req.body.phoneno,
