@@ -1,0 +1,28 @@
+{
+    "name": "restaurant",
+    "version": "1.0.0",
+    "description": "A RESTful Food Delivery App API for restaurant service",
+    "main": "src/index.js",
+    "scripts": {
+        "build": "rimraf dist/ && babel ./ --out-dir dist/ --ignore ./node_modules,./.babelrc,./package.json,./npm-debug.log --copy-files",
+        "start": "npm run build && node dist/index.js",
+        "start:dev": "nodemon"
+    },
+    "keywords": [
+        "NodeJS"
+    ],
+    "author": "Bharath,Anand,Senthil",
+    "license": "ISC",
+    "devDependencies": {
+        "@babel/cli": "^7.16.8",
+        "@babel/core": "^7.16.10",
+        "@babel/node": "^7.16.8",
+        "@babel/preset-env": "^7.16.11",
+        "nodemon": "^2.0.15",
+        "rimraf": "^3.0.2"
+    },
+    "dependencies": {
+        "express": "^4.17.3",
+	"mongoose": "^6.10.0"
+    }
+}
